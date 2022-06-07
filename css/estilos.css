@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+}
+
+#logo {
+  display: inline-flex;
+  align-self: center;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+}
+
+.indexcontenedor {
+  background-color: black;
+  height: 100%;
+}
+
+.indexcontenedor #carouselExampleDark {
+  color: white;
+  display: inline-block;
+  align-items: center;
+  justify-self: center;
+  width: 50%;
+  height: 50px;
+  margin: 50px 25%;
+}
+
+.carousel h5, p {
+  color: white;
+}
+
+.tarjetas h5, .tarjetas p {
+  color: black;
+}
+
+.tarjetas .card {
+  margin: 50px;
+  width: 30%;
+}
+
+.tarjetas .card:hover {
+  transform: scale(1.1);
+}
+
+.titulolugares {
+  color: black;
+  font-size: 3rem;
+  padding: .5em;
+}
+
+.formulario {
+  margin: 50px;
+  padding: 10px;
+  width: 30%;
+}
+
+.contenedorformulario {
+  background-image: url("../assets/foto1.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  border: 10px solid;
+  padding: 15px;
+}
+
+.tituloquienes, .subtituloquienes {
+  background-color: black;
+  font-size: 3rem;
+  padding: .5em;
+}
+
+.subtituloquienes {
+  color: pink;
+}
+
+.contenidoquienes {
+  background-color: black;
+  margin: 20px;
+  border: 10px solid;
+  padding: 15px;
+  height: 50vh;
+}
+
+.contenidoquienes p {
+  font-size: 1.5rem;
+}
+
+.accordion-body {
+  color: black;
+}
+
+#footer {
+  background-image: black;
+  color: black;
+}
+
+#footer img {
+  height: 100px;
+  width: 100px;
+}
+
+@media (max-width: 600px) {
+  #carouselExampleDark {
+    display: none;
+  }
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: $color-principal;
+}
+#logo{
+  display: inline-flex;
+  align-self: center;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+} 
+.indexcontenedor{
+  background-color: $fondo-principal;
+  height: 100%;
+  #carouselExampleDark{
+      color: $color-principal;
+      display: inline-block;
+      align-items: center;
+      justify-self: center;
+      width: 50%;
+      height: 50px;
+      margin: 50px 25%;
+  }
+}
+
+.carousel h5, p{
+  color: $color-principal;
+  }
+
+.tarjetas {
+      h5, p{
+        color: $color-secundario;
+      }
+      .card{
+        margin:  50px;
+        width: 30%;
+      }
+      .card:hover{
+    transform: scale(1.1);
+}
+}
+.titulolugares{
+  color: $color-secundario;
+  font-size: 3rem;
+  padding: .5em;
+}
+.formulario{
+  margin:  50px;
+  padding: 10px;
+  width:  30%;
+}
+@mixin form($margin, $border, $padding){
+  margin: $margin;
+  border: $border;
+  padding: $padding
+}
+.contenedorformulario{
+  background-image: url('../assets/foto1.jpg');
+  background-position: center;
+  background-size: cover;
+  @include form(20px, 10px solid, 15px)
+}
+.tituloquienes{
+  background-color: $fondo-principal;
+  font-size: 3rem;
+  padding: .5em;
+}
+.subtituloquienes{
+    @extend .tituloquienes;
+    color: pink;
+}
+$content: (
+  background-color: $fondo-principal,
+  margin: 20px,
+  border: 10px solid,
+  padding:  15px,
+  height: 50vh,
+  );
+.contenidoquienes{
+  background-color: map-get($content, background-color);
+  margin: map-get($content, margin);
+  border: map-get($content, border);
+  padding:  map-get($content, padding);
+  height: map-get($content, height);
+  p{
+    font-size: 1.5rem;
+}
+}
+.accordion-body{
+  color: black;
+}
+#footer{
+  background-image: $fondo-principal;
+  color: $color-secundario;
+  img{
+    height: 100px;
+    width: 100px;
+  }
+}
+@media (max-width: 600px){
+  #carouselExampleDark{
+   display:none;
+   }
+}
